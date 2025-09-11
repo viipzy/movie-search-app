@@ -1,0 +1,17 @@
+$gold: #FFD700;
+$dark-blue: #2C3E50;
+$text-color: rgb(244, 239, 213);    
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-color: $dark-blue;
+    color: rgb(244, 239, 213);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: auto;
+    align-items: center;
+}

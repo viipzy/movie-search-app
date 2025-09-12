@@ -95,16 +95,7 @@ section{
 }
 
 
-    span{
-        position: absolute;
-        top: 0.5rem;
-        left: 0.5rem;
-        background: transparent;
-        color: $text-color;
-        font-size: $font-size;
-        padding: 5px 10px;
-        z-index: 2;
-    }
+   
 
     .overlay-text {
     position: absolute;
@@ -127,7 +118,18 @@ section{
 }
 }
 
-
+ span{
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+        background: transparent;
+        color: $dark-blue;
+        font-size: $font-size;
+        padding: 1rem;
+        z-index: 2;
+    
+    }
+ 
 footer{
     text-align: center;
     margin:5rem;
@@ -149,6 +151,11 @@ footer{
 
     & .overlay-text {
       opacity: 1;
+      display: inline;
+    }
+
+    & .year{
+        color: $text-color;
     }
 
 }
@@ -158,4 +165,38 @@ footer{
 p{
     color: white;
     margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+@media (max-width: 1280px) {
+ 
+}
+
+
+@media (max-width: 1024px) {
+   }}
+
+
+@media (max-width: 768px) {
+  
+
+@media (max-width: 480px) {
+ .videos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+    .container {
+        width: auto;
+        height: auto;
+    }
 }

@@ -82,16 +82,6 @@ section {
   text-align: left;
   padding: 1rem;
 }
-.container span {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
-  background: transparent;
-  color: rgb(244, 239, 213);
-  font-size: 1rem;
-  padding: 5px 10px;
-  z-index: 2;
-}
 .container .overlay-text {
   position: absolute;
   bottom: 1rem;
@@ -109,6 +99,17 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+span {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  background: transparent;
+  color: #11161b;
+  font-size: 1rem;
+  padding: 1rem;
+  z-index: 2;
 }
 
 footer {
@@ -132,9 +133,41 @@ footer {
 }
 .container:hover .overlay-text {
   opacity: 1;
+  display: inline;
+}
+.container:hover .year {
+  color: rgb(244, 239, 213);
 }
 
 p {
   color: white;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    background: lightcoral;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+}
+@media (max-width: 480px) {
+  .videos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .container {
+    width: auto;
+    height: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */

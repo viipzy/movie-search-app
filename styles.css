@@ -144,11 +144,7 @@ p {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 1024px) {
-  .container {
-    background: lightcoral;
-  }
-}
+@media (max-width: 1024px) {}
 @media (max-width: 768px) {
   .container {
     display: flex;

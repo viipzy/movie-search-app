@@ -144,26 +144,5 @@ p {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 1024px) {}
-@media (max-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-  }
-}
-@media (max-width: 480px) {
-  .videos {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 0;
-    align-items: center;
-    justify-content: left;
-    margin: auto;
-  }
-  .container {
-    width: auto;
-    height: auto;
-  }
-}/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=styles.css.map */

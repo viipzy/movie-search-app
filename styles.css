@@ -62,6 +62,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px 0 20px 0;
   padding: 0;
+  position: relative;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -81,6 +82,16 @@ section {
   align-items: center;
   text-align: left;
   padding: 1rem;
+}
+.container span {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: transparent;
+  color: rgb(244, 239, 213);
+  font-size: 1rem;
+  padding: 5px 10px;
+  z-index: 2;
 }
 .container .overlay-text {
   position: absolute;
@@ -144,5 +155,18 @@ p {
   margin-bottom: 0.5rem;
 }
 
-
-/*# sourceMappingURL=styles.css.map */
+@media (max-width: 768px) and (max-width: 480px) {
+  .videos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .container {
+    width: auto;
+    height: auto;
+  }
+}/*# sourceMappingURL=styles.css.map */
